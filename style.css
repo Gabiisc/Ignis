@@ -1,0 +1,370 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: belleza;
+}
+
+html{
+    background-color: #f0eee4;
+}
+ 
+h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 3% 0px;
+    font-weight: 400;
+}
+
+header{
+    height: 710px;
+}
+
+/* CSS da imagem de background
+    .background{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+} */
+
+div.background{
+    width: 100%;
+    height: 710px;
+    position: absolute;
+    z-index: -1;
+}
+
+video.background{
+    width: 100%;
+    height: 100%;
+    /* dimensiona o vídeo de modo a preencher todo o espaço */
+    object-fit: fill;
+}
+
+nav{
+    display: flex;
+}
+
+.logoMenu{
+    margin: 40px 0px 0px 40px;
+}
+
+div.menu{
+    color: white;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.menuLeft,
+div.menuRight{
+    gap: 18%;
+    display: flex;
+    margin: 0px 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 160%;
+    } 
+
+
+    /* --------------------SESSÃO DE DESTAQUE----------------------*/
+
+div.destaques{
+    display:flex;
+    justify-content: center;
+}
+
+div.circulos{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+     /* Faz com que a imagem se ajuste dentro do tamanho da div, sem expandir */
+    background-size: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
+.destaque1{
+    background-image: url(img/destaque1.jpg);
+}
+
+.destaque2{
+    background-image: url(img/destaque2.jpg);
+}
+
+.destaque3{
+    background-image: url(img/destaque3.jpg);
+}
+
+.destaque4{
+    background-image: url(img/destaque4.jpg);
+}
+
+.destaque5{
+    background-image: url(img/destaque5.jpg);
+}
+
+
+
+ /* --------------------SESSÃO DE CATEGORIA----------------------*/
+
+div.categorias{
+    display: flex;
+}
+
+.orelha{
+    background: url(img/categoria1.jpg);
+}
+
+.labio{
+    background: url(img/categoria2.jpg);
+}
+
+.sobrancelha{
+    background: url(img/categoria3.jpg);
+}
+
+.nariz{
+    background: url(img/categoria4.jpg);
+}
+
+.outros{
+    background: url(img/categoria5.png);
+}   
+
+div.fotos{
+    width: 20%;
+    height: 480px;
+    display: flex;
+    /* Position por conta do texto que sobrepõe as imagens */
+    position: relative;
+    justify-content: center;
+    background-size: cover;
+}
+
+div.transparencia{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+}
+
+div.transparencia:hover{
+	background-color: transparent;
+}
+
+p.categorias{
+    color: #f0eee4;
+    bottom: 10%; 
+    position: absolute;
+    font-size: 200%;
+}
+
+/* --------------------RODAPÉ----------------------*/
+
+footer{
+    background-color: rgba(4, 40, 38, 0.439);
+    padding: 20px;
+    /* Feito para que o position absolute fosse usado na div.contato */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.novidades{
+    display: flex;
+    gap: 20px;
+}
+
+/* Infos do formulário e input */
+
+input{
+    border: #f0eee4 1px groove;
+    border-radius: 20px;
+    width: 230px;
+    height: 25px;
+    text-align: center;
+    background-color: rgba(4, 40, 38, 0.1);
+}
+
+::placeholder{
+    color: #f0eee4;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+div.contato{
+    gap: 10px;
+    right: 5px;
+    display: flex;
+    margin-right: 25px;
+    position: absolute;
+}
+
+iframe{
+    display:none;
+    position:absolute;
+    right: 117px;
+    bottom: 1px;
+}
+
+a.mapa:hover + iframe{
+    display: block;
+}
+
+div.creditos{
+    position: absolute;
+    top: 70px;
+    padding: 1%;
+}
+
+a.creditos{
+    color:#000000;
+    font-size: 100%
+}
+
+a.creditos:hover{
+    text-decoration: underline;
+}
+
+/* --------------------LOGIN e CADASTRO----------------------*/
+
+/* html.background{
+    background-image: url(img/background.png);
+    
+} */
+
+.card{
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #042826;
+    box-shadow: 0px 0px 10px #000000; /*Coloca a sombra no formulário*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    left: calc(50% - 200px);
+    bottom: 7%;
+}
+
+.login{
+    bottom: 15%;
+}
+
+a.fechar{
+    display: flex;
+    margin-left: 90%;
+}
+
+a.cadastro,
+a.login{
+    font-size: 15px;
+    text-decoration: underline;
+} 
+
+img.login{
+    margin: 20px 0px 40px 0px;
+    height: 100px;
+}
+
+input.login,
+input.cadastro{
+    width: 80%;
+    margin-bottom: 16px;
+    padding: 5px;
+    color: white;
+}
+
+p.login{
+    font-size: 10px;
+    margin-top: 20px;
+    color:#F0EEE4;
+}
+
+p.cadastro{
+    font-size: 15px;
+    margin-top: 20px;
+    color:#F0EEE4;
+}
+
+h1.cadastro,
+h1.favoritos{
+    color:#F0EEE4;
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px 0px 30px 0px;
+    font-weight: 100;
+    font-size: 25px; 
+}
+
+button.login,
+button.cadastro{
+    background-color:#F0EEE4;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+/* --------------------FAVORITOS----------------------*/
+
+div.container{
+    height: 500px;
+    padding: 30px 30px 0px 30px;
+    gap: 12px;
+    bottom: calc(50% - 300px);
+    }
+
+div.top{
+    width: 100%;
+    display: flex;
+    gap: 120px;
+    margin-bottom: 17px;
+    margin-left: 20px;
+}
+
+img.logo{
+    height: 90px;
+}
+
+div.item{
+    display: flex;
+    gap:15px;
+}
+
+p.favoritos{
+    background-color:rgba(46,62,56,0.3);
+    border-radius: 20px;
+    padding: 20px;
+    color:#F0EEE4;
+}
+div.verMais{
+    background-color: #F0EEE4;
+    border-radius: 20px;
+    width: 80px;
+    margin: 30px auto;
+}
+
+a.verMais{
+    color:#042826;
+    font-size: 20px;
+}
+
+img.itens{
+    width: 100px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
